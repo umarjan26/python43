@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <label>Fist Number:</label><br/>
+    <input type="number" name="first" required/><br/>
+    <label>Second Number:</label><br/>
+    <input type="number" name="second" required/><br/>
+    <br/>
+    <input type="radio" name="calculate" value="+">
+    <label>
+        plus
+    </label><br/>
+    <input type="radio" name="calculate" value="-">
+    <label>
+        minus
+    </label><br/>
+    <input type="radio" name="calculate" value="*">
+    <label>
+        multiply
+    </label><br/>
+    <input type="radio" name="calculate" value="/">
+    <label>
+        divide
+    </label><br/>
+    <br/>
+    <input type="submit" value="считать"/>
+</form>
+   <input type="reset" value="Очистить"></p>
+ </form>
+
+</body>
+</html>
+
